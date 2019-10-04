@@ -17,7 +17,9 @@ let appData = {
 
 
 
+
 const maney = document.getElementById('inpManey');
+
 appData.maney = maney.value;
 appData.timeData = "2018-12-02";
 appData.expenses.first = new OneExpenses(document.getElementById('inpTextFirst').value, document.getElementById('inpManeyFirst').value);
