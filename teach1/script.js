@@ -1,10 +1,21 @@
-document.writeln("js work!");
-console.log("test console!");
-//alert("test alert!");
-let arr = ['myfoto.jpg', 'vesna.png', 'system.txt'];
-//let youQust = prompt("Вы знаете ответ?!", "Да");
-console.log(typeof(arr));
+let money = prompt("Ваш бюджет на месяц?", ""),
+    time = prompt("Введите дату в формате YYYY-MM-DD", '');
 
-let inputLogic = prompt("Please enter you age", "18");
+let appData = {
+    budget: money,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    timeData: time,
+    savings: false
+}
 
-(inputLogic > 18) ? (console.log("You have more 18 year old")) : console.log("you small boy");
+let a1 = prompt("Введите обязательную статья расходов в этом месяце", ""),
+    a2 = prompt("Во сколько обойдется?", ""),
+    a3 = prompt("Введите обязательную статья расходов в этом месяце", ""),
+    a4 = prompt("Во сколько обойдется?", "");
+
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
+
+alert(appData.budget / 30);
